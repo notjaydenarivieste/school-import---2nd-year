@@ -2,13 +2,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class RectangleCalc extends JFrame implements ActionListener{
+public class rectangleCalc extends JFrame implements ActionListener{
    JTextField lengthField;
    JTextField widthField;
    JLabel area;
    JLabel perimeter;
    
-   public RectangleCalc(){
+   public rectangleCalc(){
       JFrame calcFrame = new JFrame("Rectangle");
       JLabel label1 = new JLabel("Enter the length: ");
       JLabel label2 = new JLabel("Enter the width: ");
@@ -48,5 +48,9 @@ public class RectangleCalc extends JFrame implements ActionListener{
       
       area.setText("Area: " + areaAns);
       perimeter.setText("Perimeter: " + perimeterAns);
+   }
+   
+   public static void main(String[] args){
+      rectangleCalc recFrame = new rectangleCalc();
    }
 }
